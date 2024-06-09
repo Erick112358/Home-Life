@@ -4,58 +4,44 @@
     <meta charset="UTF-8">
     <title>Home&Life</title>
     <link href='https://fonts.googleapis.com/css?family=Fredericka the Great' rel='stylesheet'>
-    <link rel="stylesheet" href="PaginaPrincipal.css">
+    <link rel="stylesheet" href="vasoYeti20oz.css">
 </head>
 <body>
     <header>
         <div>
-            <img src="imagenes/logoSimple.jpg" alt="Logo">
+            <img src="/imagenes/logoSimple.jpg" alt="Logo">
             <h1>Home&Life</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#termos">Termos</a></li>
-                <li><a href="#entretenimiento">Entretenimiento</a></li>
-                <li><a href="#niños">Niños</a></li>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/index.html#termos">Termos</a></li>
+                <li><a href="/index.html#entretenimiento">Entretenimiento</a></li>
+                <li><a href="/index.html#niños">Niños</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <h2 id="termos">Termos</h2>
+            <form method="post">
+                <label for="txtTelefono">Teléfono: </label>
+                <input type="text" id="txtTelefono" name="telefono">
+            </form>
+        </section>
+        
+        <section>
+            
             <div class="productos">
-                <ul>
-                    <li>
-                        <div class="datos">
-                            <h3>Vaso Yeti 26oz</h3>
-                            <span>Precio: L1,290</span>
-                            <button type="button" onclick="sendWhatsAppMessage('Vaso yeti de 26oz ordenado')">Ordenar</button>
-                        </div>
-                        <img src="imagenes/vasoYeti26oz.jpg" alt="vaso yeti 26oz">
-                    </li>
-                    <li>
                         <div class="datos">
                             <h3>Vaso Yeti 20oz</h3>
                             <span>Precio: L1,290</span>
-                            <a href="termos/vasoYeti20oz.html"><button type="button">Ver</button></a>
+                            <button type="button" onclick="sendWhatsAppMessage('Vaso yeti de 20oz ordenado')">Ordenar</button>
                         </div>
-                        <img src="imagenes/vasoYeti20oz.jpg" alt="vaso yeti 20oz">
-                    </li>
-                </ul>
-                
-            </div>
-            <div class="producto">
+                        <img src="/imagenes/vasoYeti20oz.jpg" alt="vaso yeti 20oz">   
+            </div>          
+        </section>
 
-            </div>
-            
-        </section>
-        <section>
-            <h2 id="entretenimiento">Entretenimiento</h2>
-        </section>
-        <section>
-            <h2 id="niños">Niños</h2>
-        </section>
+        
 
         <script>
             function sendWhatsAppMessage(texto) {
@@ -98,9 +84,8 @@
     <footer>
         <div>
             <a href="https://wa.me/50496418993" target="_blank"
-            >Contáctanos: <img src="imagenes/whatsapp-64.png" alt="Logo whatsapp"></a>
+            >Contáctanos: <img src="/imagenes/whatsapp-64.png" alt="Logo whatsapp"></a>
         </div>
-        
     </footer>
 </body>
 </html>

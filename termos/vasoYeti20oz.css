@@ -48,28 +48,20 @@ body{
     padding: px;
 }
 
-body main section{
-    padding: 0rem 1rem;
-}
 
-body main h2{
-    font-family: 'Fredericka the Great';
-}
-
-.productos ul{
-    list-style: none;
-    display: flex;
+body main{
+    align-items: center;
     justify-content: space-around;
-}
-
-.productos ul li{
     display: flex;
-    padding: 1rem;
-    margin: 0rem;
-    background-color: #cccccc;
 }
 
-.productos ul li h3{
+.productos{
+    display: flex;
+    padding: 4rem;
+    margin: 0rem;
+}
+
+.datos h3{
     font-family: 'Fredericka the Great';
     font-weight: normal;
 }
@@ -87,7 +79,7 @@ body main h2{
     justify-content: space-around;
 }
 
-.productos ul li img{
+.productos img{
     padding: 0rem 0.5rem;
 }
 
@@ -102,7 +94,7 @@ body main h2{
     border-radius: 15%;
 }
 
-.productos ul li button:hover{
+.productos button:hover{
     background-color: #0c6eaa;
     cursor: pointer;
 }
