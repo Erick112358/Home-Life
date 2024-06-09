@@ -9,7 +9,7 @@
 <body>
     <header>
         <div>
-            <img src="imagenes/logo.jpg" alt="Logo">
+            <img src="imagenes/logoSimple.jpg" alt="Logo">
             <h1>Home&Life</h1>
         </div>
         <nav>
@@ -21,10 +21,41 @@
         </nav>
     </header>
     <main>
-        <h2 id="termos">Termos</h2>
-        <button type="button" onclick="sendWhatsAppMessage('Finalmente')">Ordenar</button>
-        <h2 id="entretenimiento">Entretenimiento</h2>
-        <h2 id="niños">Niños</h2>
+        <section>
+            <h2 id="termos">Termos</h2>
+            <div class="productos">
+                <ul>
+                    <li>
+                        <div class="datos">
+                            <h3>Vaso Yeti 26oz</h3>
+                            <span>Precio: L1,290</span>
+                            <button type="button" onclick="sendWhatsAppMessage('Vaso yeti de 26oz ordenado')">Ordenar</button>
+                        </div>
+                        <img src="imagenes/vasoYeti26oz.jpg" alt="vaso yeti 26oz">
+                    </li>
+                    <li>
+                        <div class="datos">
+                            <h3>Vaso Yeti 20oz</h3>
+                            <span>Precio: L1,290</span>
+                            <button type="button" onclick="sendWhatsAppMessage('Vaso yeti de 20oz ordenado')">Ordenar</button>
+                        </div>
+                        <img src="imagenes/vasoYeti20oz.jpg" alt="vaso yeti 20oz">
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="producto">
+
+            </div>
+            
+        </section>
+        <section>
+            <h2 id="entretenimiento">Entretenimiento</h2>
+        </section>
+        <section>
+            <h2 id="niños">Niños</h2>
+        </section>
+
         <script>
             function sendWhatsAppMessage(texto) {
                 const url = "https://graph.facebook.com/v19.0/348283308364534/messages";
@@ -65,7 +96,8 @@
     </main>
     <footer>
         <div>
-            <a href="https://wa.me/50496418993?text=I%20am%20interested%20in%20your%20car%20for%20sale" target="_blank">¡Contáctanos!</a>
+            <a href="https://wa.me/50496418993" target="_blank"
+            >Contáctanos: <img src="imagenes/whatsapp-64.png" alt="Logo whatsapp"></a>
         </div>
         
     </footer>
